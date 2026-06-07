@@ -1,0 +1,226 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    color: #1f2937;
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #eefbf1 0%,
+        #d7f5df 50%,
+        #c3ebcc 100%
+    );
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.modal-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.secondary {
+    background: #777;
+    margin-left: 10px;
+}
+
+.stock {
+     font-size: small;
+     font-weight: 600;
+     font-style: italic;
+}
+
+.seeds {
+    display: inline-block;
+    width: 300px;
+}
+
+.post {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #15803d;
+    margin-bottom: 1.5rem;
+}
+
+.quantity {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #15803d;
+}
+
+.paypalFee {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #15803d;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.disclaimer {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #15803d;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 2rem 0;
+}
+
+header h1 {
+    color: #166534;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.hero {
+    padding: 3rem 0 5rem;
+}
+
+.hero .container {
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: 0 15px 40px rgba(22, 101, 52, 0.12);
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    color: #14532d;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #4b5563;
+    max-width: 550px;
+    margin: 0 auto 2rem;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 18px;
+    margin-bottom: 2rem;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #15803d;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.btn {
+    display: inline-block;
+    background: #16a34a;
+    color: white;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    background: #15803d;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #4b5563;
+}
+
+
+.open-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin: 15px auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.popup-link:hover {
+    background: #0056b3;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="./style.css" type="text/css">
+   <header>
+    <div class="container">
+        <h1><i>HomeGrownStrainz</i></h1>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h2><i>HomeGrownStrainz</i></h2>
+        <p>
+            Australian Hemp Seeds
+        </p>
+
+        <img src="./images/bertha.jpg" alt="BerthaPreFlower">
+        <div class="price">$19.99</div>
+        <div class="quantity">Per 20 Seeds</div>
+        <div class="post">Discreet express postage within Australia - <i>Flat Rate $15</i></div>
+    <br>
+        <div class="seeds">
+            <img src="./images/seedsopen.jpg" alt="seeds" />
+        </div>
+        <div class="stock">
+            <p>
+                Limited Availability
+            </p>
+        </div>
+        <button class="btn" onclick="openAgeModal()">Buy Seeds</button>
+
+        <br><br>
+
+        <button class="btn" onclick="window.location.href='terms.html';">Terms & Conditions</button>
+        <br><br>
+        <button class="btn" onclick="window.location.href='privacy.html';">Privacy Policy</button>
+    </div>
+    <div class="disclaimer">*Seeds are <i>NOT</i> feminised, and may not be guaranteed to produce females plants!</div>
+    <div class="paypalFee">**Puchases through Paypal will incur a 3% fee!</div>
+</section>
+
+<footer>
+    <p><i>© 2026 HomeGrownStrainz</i></p>
+</footer>
+</head>
+<!-- Age Verification Modal -->
+<div id="ageModal" class="modal">
+    <div class="modal-content">
+        <h2>Age Verification</h2>
+        <p>
+            By clicking "I Agree", you confirm that you have read and agree
+            to our <a href="./terms.html" target="_blank">Terms & Conditions</a>
+            and are at least 18 years of age.
+        </p>
+
+        <button class="btn" onclick="showProductModal()">I Agree</button>
+        <button class="btn secondary" onclick="closeAgeModal()">Cancel</button>
+    </div>
+</div>
+
+<!-- Product Modal -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <img src="./images/qr.png" alt="qr_code" class="modal-image">
+
+        <h2>Ready to Order?</h2>
+
+        <p>
+            To place your order, please contact us on Telegram:
+        </p>
+
+        <p>
+            <strong>@homegrownstrainz</strong>
+        </p>
+
+        <button class="btn" onclick="closeProductModal()">Close</button>
+    </div>
+</div>
+<script>
+function openAgeModal() {
+    document.getElementById("ageModal").style.display = "flex";
+}
+
+function closeAgeModal() {
+    document.getElementById("ageModal").style.display = "none";
+}
+
+function showProductModal() {
+    closeAgeModal();
+    document.getElementById("productModal").style.display = "flex";
+}
+
+function closeProductModal() {
+    document.getElementById("productModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+    const ageModal = document.getElementById("ageModal");
+    const productModal = document.getElementById("productModal");
+
+    if (event.target === ageModal) {
+        closeAgeModal();
+    }
+
+    if (event.target === productModal) {
+        closeProductModal();
+    }
+}
+</script>
+<body>
