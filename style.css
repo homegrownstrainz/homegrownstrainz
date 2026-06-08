@@ -126,7 +126,6 @@ header h1 {
 }
 
 .hero p {
-    font-size: 1.1rem;
     color: #4b5563;
     max-width: 550px;
     margin: 0 auto 2rem;
@@ -311,4 +310,10 @@ footer {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.view-more {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-size: 1rem;
 }
